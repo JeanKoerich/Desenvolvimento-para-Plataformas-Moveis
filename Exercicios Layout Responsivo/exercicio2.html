@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercicio 2</title>
+	</head>
+
+	<!-- 
+    Exercício 2:
+    
+    Menu horizontal com Flexbox:
+    - Crie um nav com uma lista (ul > li) de links exibidos horizontalmente.
+    - Use display: flex; justify-content: space-between; align-items: center.
+    - Em telas menores, transforme o menu em uma coluna vertical com
+media queries.    
+-->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #000;
+			font-family: "Courier New", Courier, monospace;
+			padding: 20px;
+		}
+
+		nav.lista {
+			padding: 10px 20px;
+			background-color: #cbf201;
+		}
+
+		ul.menu {
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		ul.menu li {
+			position: relative;
+			cursor: pointer;
+			color: #000;
+			padding: 5px 0;
+		}
+
+		ul.menu li:hover {
+			color: #fff;
+		}
+
+		@media (max-width: 768px) {
+			ul.menu {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	</style>
+
+	<body>
+		<nav class="lista">
+			<ul class="menu">
+				<li class="home">Home</li>
+				<li class="projeto">Projetos</li>
+				<li class="história">História</li>
+				<li class="contatos">Contato</li>
+			</ul>
+		</nav>
+	</body>
+</html>

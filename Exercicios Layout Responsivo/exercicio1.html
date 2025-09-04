@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercicio 1</title>
+	</head>
+
+	<!--
+    Exercício 1:
+    
+    Layout de cartões responsivos com Flexbox: 
+    - Crie um container com 6 cartões usando Flexbox e flex-wrap para
+    permitir a quebra de linha.
+    - Cada cartão deve ocupar 100% dalargura em dispositivos móveis,
+    utilizando flex: 1 1 100%.
+    - Em telas maiores, use media queries para ajustar cada cartão a 30%
+    da largura (flex: 1 1 30%).
+    - Estilize com padding, margin e background.
+-->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #000;
+			font-family: "Courier New", Courier, monospace;
+			padding: 20px;
+		}
+
+		div.container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			justify-content: center;
+		}
+
+		div.cartao {
+			flex: 1 1 100%;
+			background-color: #cbf201;
+			padding: 5ch;
+			border-radius: 8px;
+			text-align: center;
+			color: #000;
+		}
+
+		@media (min-width: 768px) {
+			.cartao {
+				flex: 1 1 30%;
+				max-width: 30%;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="container">
+			<div class="cartao">cartao 1</div>
+			<div class="cartao">cartao 2</div>
+			<div class="cartao">cartao 3</div>
+			<div class="cartao">cartao 4</div>
+			<div class="cartao">cartao 5</div>
+			<div class="cartao">cartao 6</div>
+		</div>
+	</body>
+</html>
