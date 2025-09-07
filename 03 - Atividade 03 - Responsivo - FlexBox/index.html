@@ -3,17 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>K5 Engenharia Elétrica</title>
-		<link rel="stylesheet" href="style.css" />
-		<!-- <link rel="manifest" href="manifest.webmanifest" />
-		<script src="service-worker.js"></script> -->
+		<title>K5 Manutenção Industrial</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="manifest" href="manifest.webmanifest" />
+		<meta name="theme-color" content="#062335" />
 	</head>
 	<body>
 		<header class="menu">
-			<!-- 1920x100-->
-			<a href="#home"
-				><img src="img/icons/choque-64.png" alt="logo" width="400" height="70"
-			/></a>
+			<a href="#home" class="marca" aria-label="K5 Manutenção Industrial">
+				<img
+					src="img/icons/SIMBOLO SEM FUNDO.png"
+					alt="Logo"
+					width="826"
+					height="694"
+				/><span class="marca-txt">MANUTENÇÃO INDUSTRIAL</span></a
+			>
 			<nav class="menu-opcoes" aria-label="Principal">
 				<ul>
 					<li><a href="#home">Home</a></li>
@@ -24,15 +28,20 @@
 			</nav>
 		</header>
 
-		<main>
-			<section id="home">
-				<div>
-					<img src="img/banner.png" alt="" width="1920" height="170" />
-					<!-- 1920x170-->
+		<main class="conteudo" id="conteudo">
+			<section id="home" class="destaque">
+				<div class="banner">
+					<img
+						src="img/banner.png"
+						alt=""
+						loading="lazy"
+						width="1920"
+						height="170"
+					/>
 				</div>
-				<div>
-					<div>
-						<h1>K5 Engenharia Elétrica</h1>
+				<div class="destaque-conteudo">
+					<div class="destaque-texto">
+						<h1>Manutenção Industrial</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
 							praesentium explicabo illum officiis excepturi soluta velit cupiditate
@@ -44,15 +53,17 @@
 								src="img/seta-32.png"
 								alt=""
 								aria-hidden="true"
+								loading="lazy"
 								width="32"
 								height="32"
 							/>Avançar
 						</button>
 					</div>
-					<div>
+					<div class="destaque-imagem">
 						<img
-							src="img/fundo-home-grande.png"
-							alt="Imagem ..."
+							src="img/icons/FUNDO CLARO.png"
+							alt=""
+							loading="lazy"
 							width="750"
 							height="600"
 						/>
@@ -62,62 +73,68 @@
 
 			<section id="solucoes">
 				<div>
-					<div>
-						<img src="img/banner.png" alt="" width="1920" height="170" />
-						<!-- 1920x170-->
-					</div>
-
-					<div class="sub-informativo">
-						<div>
+					<ul class="sub-informativo">
+						<li>
 							<img
-								src="img/sub-informativo-1.png"
-								alt="sub-informativo 1"
+								src="img/icons/FUNDO AZUL.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
 								width="129"
 								height="129"
 							/>
-						</div>
-						<div>
+							<span>Equipe Qualificada</span>
+						</li>
+						<li>
 							<img
-								src="img/sub-informativo-2.png"
-								alt="sub-informativo 2"
+								src="img/icons/FUNDO CLARO.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
 								width="129"
 								height="129"
 							/>
-						</div>
-						<div>
+							<span>Outros Serviços</span>
+						</li>
+						<li>
 							<img
-								src="img/sub-informativo-1.png"
-								alt="sub-informativo 3"
+								src="img/icons/FUNDO AZUL.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
 								width="129"
 								height="129"
 							/>
-						</div>
-						<div>
+							<span>Outros Serviços</span>
+						</li>
+						<li>
 							<img
-								src="img/sub-informativo-2.png"
-								alt="sub-informativo 4"
+								src="img/icons/FUNDO CLARO.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
 								width="129"
 								height="129"
 							/>
-						</div>
-						<div>
+							<span>Atendimento Regional</span>
+						</li>
+						<li>
 							<img
-								src="img/sub-informativo-1.png"
-								alt="sub-informativo 5"
+								src="img/icons/FUNDO AZUL.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
 								width="129"
 								height="129"
 							/>
-						</div>
-					</div>
+							<span>Orçamento Rápido</span>
+						</li>
+					</ul>
 				</div>
 				<div>
 					<div>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-							dolor consequuntur necessitatibus neque repudiandae, quibusdam illo!
-							Minima, autem, deserunt id accusamus modi, accusantium ea debitis
-							voluptates corporis placeat amet nemo.
-						</p>
+						<p>Segurança, Eficiência, Qualidade</p>
+						<p>Inovação e Confiabilidade</p>
 					</div>
 					<div>
 						<h2>Soluções</h2>
@@ -131,12 +148,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/choque-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/choque-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt,
 								deserunt illum impedit doloremque ut voluptatibus.
@@ -146,12 +172,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/eletricidade-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/eletricidade-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt,
 								deserunt illum impedit doloremque ut voluptatibus.
@@ -161,12 +196,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/frigorifico-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/frigorifico-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt,
 								deserunt illum impedit doloremque ut voluptatibus.
@@ -176,12 +220,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/manutencao-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/manutencao-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
 								omnis ullam eveniet fugit, earum, placeat quos adipisci dolore.
@@ -191,12 +244,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/frigorifico-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/norte-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae
 								maxime ex cupiditate beatae animi saepe dignissimos in exercitationem.
@@ -206,12 +268,21 @@
 					<figure>
 						<img
 							src="img/fundo-solucoes.png"
-							alt="imagem de fundo"
+							alt=""
+							aria-hidden="true"
+							loading="lazy"
 							width="280"
 							height="280"
 						/>
 						<figcaption>
-							<img src="img/manutencao-64.png" alt="icone" width="64" height="64" />
+							<img
+								src="img/consultor-64.png"
+								alt=""
+								aria-hidden="true"
+								loading="lazy"
+								width="64"
+								height="64"
+							/>
 							<p>
 								dolor doloremque, maiores id mollitia eveniet quaerat veniam
 								perspiciatis itaque accusantium.
@@ -221,41 +292,62 @@
 				</div>
 			</section>
 			<section id="servicos">
-				<div>
-					<img src="img/banner.png" alt="" width="1920" height="170" />
-					<!-- 1920x170-->
+				<div class="banner">
+					<img
+						src="img/banner.png"
+						alt=""
+						loading="lazy"
+						width="1920"
+						height="170"
+					/>
 				</div>
-				<div>
+				<div class="servicos-conteudo">
 					<h2>Serviços</h2>
 					<img
-						src="img/fundo-servico-pequeno.png"
-						alt="Foto Anterior - Pequena"
+						class="servico-lateral"
+						src="img/icons/FUNDO AZUL.png"
+						alt=""
+						loading="lazy"
 						width="200"
 						height="100"
 					/>
 					<img
-						src="img/fundo-servico-grande.png"
-						alt="Foto Grande - Grande"
+						class="servico-central"
+						src="img/icons/FUNDO CLARO.png"
+						alt=""
+						loading="lazy"
 						width="700"
 						height="450"
 					/>
 					<img
-						src="img/fundo-servico-pequeno.png"
-						alt="Foto Proxima - Pequena"
+						class="servico-lateral"
+						src="img/icons/FUNDO AZUL.png"
+						alt=""
+						loading="lazy"
 						width="200"
 						height="100"
 					/>
 				</div>
 			</section>
-			<section id="contato">
+			<section class="contato" id="contato">
 				<h2>Contato</h2>
-				<img src="img/icons/choque-64.png" alt="logo" width="64" height="64" />
+				<img
+					src="img/icons/SEM FUNDO 2.png"
+					alt="Logo"
+					loading="lazy"
+					width="264"
+					height="264"
+				/>
 				<address>
 					<p>Rio do Sul - SC</p>
 				</address>
 				<nav>
 					<ul>
-						<li><a href="https://wa.me/5547911112222">Whatsapp</a></li>
+						<li>
+							<a href="https://wa.me/5547911112222" target="_blank" rel="noopener"
+								>Whatsapp</a
+							>
+						</li>
 						<li><a href="tel:+5547911112222">Telefone</a></li>
 					</ul>
 				</nav>
@@ -263,7 +355,18 @@
 		</main>
 
 		<footer>
-			<p></p>
+			<p>© 2025 K5 Manutenção Industrial</p>
 		</footer>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				if ("serviceWorker" in navigator) {
+					navigator.serviceWorker
+						.register("service-worker.js", { scope: "./" })
+						.then((reg) => console.log("SW Conectado:", reg.scope))
+						.catch((err) => console.log("SW erro:", err));
+				}
+			});
+		</script>
 	</body>
 </html>
