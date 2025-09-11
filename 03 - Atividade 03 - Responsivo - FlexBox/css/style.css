@@ -22,7 +22,8 @@ body {
     margin: 0;
     color: var(--preto);
     background: var(--branco);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
 }
 
 img {
@@ -55,7 +56,7 @@ img {
     color: var(--preto);
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
     font-size: 1.25rem;
     display: inline-flex;
     align-items: center;
@@ -72,7 +73,7 @@ img {
 
 .marca-txt {
     font-weight: 700;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     color: var(--preto);
     white-space: nowrap;
     line-height: 1;
@@ -98,15 +99,16 @@ nav.menu-opcoes a {
     justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: .9rem;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
     background: var(--branco);
     color: var(--preto);
     padding: 10px 18px;
     border-radius: 6px;
     border: 1px solid transparent;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
-    transition: background .15s, color .15s, box-shadow .15s, transform .05s, border-color .15s;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.05s,
+        border-color 0.15s;
 }
 
 nav.menu-opcoes a:hover,
@@ -121,7 +123,7 @@ nav.menu-opcoes a:active {
 }
 
 nav.menu-opcoes a.ativo {
-    box-shadow: inset 0 -3px 0 var(--ciano), 0 1px 0 rgba(0, 0, 0, .05);
+    box-shadow: inset 0 -3px 0 var(--ciano), 0 1px 0 rgba(0, 0, 0, 0.05);
     font-weight: 600;
 }
 
@@ -132,7 +134,7 @@ nav.menu-opcoes a.ativo {
 
 .banner {
     background: var(--azul);
-    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .banner img {
@@ -175,7 +177,7 @@ nav.menu-opcoes a.ativo {
     color: var(--azul);
     font-weight: 600;
     cursor: pointer;
-    transition: transform .05s, filter .15s;
+    transition: transform 0.05s, filter 0.15s;
 }
 
 .destaque-texto button:hover,
@@ -191,7 +193,7 @@ nav.menu-opcoes a.ativo {
 .destaque-imagem {
     background: var(--branco);
     border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     padding: 16px;
 }
 
@@ -217,7 +219,7 @@ nav.menu-opcoes a.ativo {
 
 .sub-informativo {
     background: var(--azul);
-    border-top: 1px solid rgba(255, 255, 255, .18);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: inset 0 -6px 0 var(--ciano);
     margin: 0;
     padding: 18px 24px;
@@ -241,9 +243,9 @@ nav.menu-opcoes a.ativo {
     padding: 16px;
     border-radius: 18px;
     background: var(--cinza);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     object-fit: contain;
-    transition: transform .08s, filter .15s;
+    transition: transform 0.08s, filter 0.15s;
 }
 
 .sub-informativo li:nth-child(even) img {
@@ -253,8 +255,8 @@ nav.menu-opcoes a.ativo {
 
 .sub-informativo span {
     color: #e9f3f2;
-    font-size: .82rem;
-    letter-spacing: .2px;
+    font-size: 0.82rem;
+    letter-spacing: 0.2px;
     white-space: nowrap;
     text-align: center;
 }
@@ -302,7 +304,7 @@ nav.menu-opcoes a.ativo {
 #solucoes>div:nth-of-type(2)>div:last-child p {
     margin: 0 auto;
     max-width: 58ch;
-    font-size: .95rem;
+    font-size: 0.95rem;
 }
 
 #solucoes>div:nth-of-type(3) {
@@ -318,14 +320,14 @@ nav.menu-opcoes a.ativo {
     position: relative;
     background: var(--branco);
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
     padding: 60px 20px 28px;
     min-height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: visible;
-    transition: transform .12s ease, box-shadow .12s ease;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 #solucoes figure>img:first-child {
@@ -349,7 +351,7 @@ nav.menu-opcoes a.ativo {
     border-radius: 50%;
     background: var(--preto);
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
@@ -358,7 +360,7 @@ nav.menu-opcoes a.ativo {
     padding: 0;
     margin: 40px 0 0;
     color: var(--preto);
-    font-size: .95rem;
+    font-size: 0.95rem;
     line-height: 1.45;
     max-width: 260px;
 }
@@ -366,7 +368,7 @@ nav.menu-opcoes a.ativo {
 @media (hover: hover) {
     #solucoes figure:hover {
         transform: translateY(-2px);
-        box-shadow: 0 14px 32px rgba(0, 0, 0, .22);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
     }
 }
 
@@ -381,7 +383,7 @@ nav.menu-opcoes a.ativo {
 #servicos .banner {
     margin: 0 -24px 24px;
     background: var(--azul);
-    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 #servicos .banner img {
@@ -397,13 +399,13 @@ nav.menu-opcoes a.ativo {
     margin: 0 auto;
     padding-top: 24px;
     /* cria o respiro */
-    border-top: 1px solid rgba(255, 255, 255, .18);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #servicos .servicos-conteudo {
     display: grid;
-    grid-template-columns:
-        minmax(120px, clamp(140px, 18vw, 220px)) minmax(420px, clamp(520px, 60vw, 720px)) minmax(120px, clamp(140px, 18vw, 220px));
+    grid-template-columns: minmax(120px, clamp(140px, 18vw, 220px)) minmax(420px,
+            clamp(520px, 60vw, 720px)) minmax(120px, clamp(140px, 18vw, 220px));
     gap: 20px 32px;
     align-items: center;
     justify-content: center;
@@ -421,7 +423,7 @@ nav.menu-opcoes a.ativo {
     display: block;
     height: auto;
     border-radius: 16px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 #servicos .servicos-conteudo .servico-lateral {
@@ -437,12 +439,20 @@ nav.menu-opcoes a.ativo {
     justify-self: start;
 }
 
+#servicos .servicos-conteudo .servico-lateral img,
+#servicos .servicos-conteudo .servico-central img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    height: auto;
+}
+
 /* ===== CONTATO ===== */
 #contato {
     position: relative;
     background: linear-gradient(90deg, var(--azul) 0%, var(--ciano) 100%);
     padding: 72px 24px;
-    border-top: 1px solid rgba(255, 255, 255, .18);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
     overflow: hidden;
     color: var(--branco);
     text-align: center;
@@ -457,7 +467,7 @@ nav.menu-opcoes a.ativo {
     height: 280px;
     border-radius: 18px;
     background: var(--ciano);
-    opacity: .95;
+    opacity: 0.95;
     transform: translateY(-12px);
     z-index: 0;
 }
@@ -470,7 +480,7 @@ nav.menu-opcoes a.ativo {
 #contato>img {
     display: block;
     margin: 0 auto 18px;
-    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.25));
 }
 
 #contato address {
@@ -510,8 +520,8 @@ nav.menu-opcoes a.ativo {
     padding: 10px 16px;
     border-radius: 999px;
     font-weight: 600;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, .15);
-    transition: filter .15s ease, transform .05s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: filter 0.15s ease, transform 0.05s ease;
 }
 
 #contato nav a:hover,
@@ -538,14 +548,14 @@ footer {
     border-top: 8px solid var(--ciano);
     padding: 22px 16px;
     text-align: center;
-    font-size: .95rem;
+    font-size: 0.95rem;
     position: relative;
     z-index: 1;
 }
 
 footer p {
     margin: 0;
-    opacity: .95;
+    opacity: 0.95;
 }
 
 /* ===== RESPONSIVO ===== */
@@ -592,7 +602,7 @@ footer p {
     }
 
     .sub-informativo span {
-        font-size: .78rem;
+        font-size: 0.78rem;
     }
 
     #solucoes>div:nth-of-type(3) {
@@ -623,7 +633,7 @@ footer p {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
         margin-top: 56px;
-        /* mantém respiro abaixo do banner */
+        align-items: start;
     }
 
     #servicos .servicos-conteudo h2 {
@@ -634,6 +644,18 @@ footer p {
         grid-column: 1 / -1;
         max-width: 820px;
         justify-self: center;
+    }
+
+    #servicos .servicos-conteudo .servico-lateral img {
+    max-width: 240px;
+    margin-inline: auto;
+    box-shadow: 0 6px 16px rgba(0,0,0,.18);
+    opacity: .98;
+    }
+
+    #servicos .servicos-conteudo .servico-central img {
+    max-width: 820px;
+    margin-inline: auto;
     }
 
     #servicos .servicos-conteudo .servico-lateral:first-of-type {
@@ -659,14 +681,25 @@ footer p {
     }
 
     #servicos .servicos-conteudo {
-        grid-template-columns: 1fr;
-        margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 32px;
     }
 
-    #servicos .servicos-conteudo img {
-        grid-column: 1;
-        justify-self: center;
-        max-width: 520px;
+    #servicos .servicos-conteudo .servico-lateral {
+    display: none;
+    }
+
+    #servicos .servicos-conteudo .servico-central {
+    grid-column: 1;
+    justify-self: center;
+    width: 100%;
+    max-width: 520px;
+    }
+
+    #servicos .servicos-conteudo .servico-central img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
     }
 }
 
