@@ -65,7 +65,7 @@ class CrosswordGeneratorWidget extends ConsumerWidget {
                         ? Theme.of(context).colorScheme.onPrimary
                         : Theme.of(context).colorScheme.primary,
                   ),
-                  child: Text(character.character),
+                  child: Text('•'),
                 ),
               ),
             );
